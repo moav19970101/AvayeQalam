@@ -448,27 +448,7 @@ if (searchInput) {
 
     searchInput.addEventListener("keyup", function () {
 
-        const value = this.value.trim().toLowerCase();
-
-        document.querySelectorAll("#products .col-lg-3").forEach(col => {
-
-            const title =
-                col.querySelector("h4")?.textContent.toLowerCase() || "";
-
-            const category =
-                col.querySelector(".product-category")?.textContent.toLowerCase() || "";
-
-            if (title.includes(value) || category.includes(value)) {
-
-                col.style.display = "";
-
-            } else {
-
-                col.style.display = "none";
-
-            }
-
-        });
+        filterProducts();
 
     });
 
@@ -520,7 +500,42 @@ function formatPrice(price){
     return Number(price).toLocaleString("fa-IR")+" تومان";
 
 }
+// ===============================
+// Filter + Search
+// ===============================
 
+function filterProducts() {
+
+    const searchValue = searchInput
+        ? searchInput.value.trim().toLowerCase()
+        : "";
+
+    document.querySelectorAll("#products .col-lg-3").forEach(product => {
+
+        const category = product.dataset.category || "";
+
+        const title =
+            product.querySelector("h4")?.textContent.toLowerCase() || "";
+
+        const categoryText =
+            product.querySelector(".product-category")?.textContent.toLowerCase() || "";
+
+        const matchFilter =
+            currentFilter === "all" ||
+            category === currentFilter;
+
+        const matchSearch =
+            title.includes(searchValue) ||
+            categoryText.includes(searchValue);
+
+        product.style.display =
+            (matchFilter && matchSearch)
+                ? ""
+                : "none";
+
+    });
+
+}
 // ===============================
 // Welcome
 // ===============================
@@ -538,7 +553,44 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     resetSearch();
 
+    filterProducts();
+
 });
+
+// ===============================
+// Product Filter
+// ===============================
+
+let currentFilter = "all";
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+if (filterButtons.length) {
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            // تغییر دکمه فعال
+            filterButtons.forEach(btn => {
+
+                btn.classList.remove("btn-warning", "active");
+                btn.classList.add("btn-outline-warning");
+
+            });
+
+            this.classList.remove("btn-outline-warning");
+            this.classList.add("btn-warning", "active");
+
+            currentFilter = this.dataset.filter;
+
+            filterProducts();
+
+        });
+
+    });
+
+}
 
 // ===============================
 // END FILE
