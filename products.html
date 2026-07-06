@@ -4,65 +4,1124 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>محصولات | نوشت افزار آوای قلم</title>
+<title>آوای قلم | فروشگاه لوازم التحریر</title>
+
+<meta name="description"
+content="فروشگاه اینترنتی آوای قلم | خرید انواع دفتر، خودکار، مداد، جامدادی و لوازم التحریر با بهترین قیمت">
+
+<meta name="keywords"
+content="لوازم التحریر، دفتر، خودکار، مداد، جامدادی، آوای قلم">
+
+<link rel="icon" href="images/logo.png">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+<!-- ===========================
+Top Bar
+=========================== -->
+
+<div class="top-bar">
 
 <div class="container">
 
-<a class="navbar-brand d-flex align-items-center" href="../index.html">
+<div class="row align-items-center">
 
-<img src="../images/logo.png" height="55">
+<div class="col-md-6 text-center text-md-start">
 
-<span class="me-2">نوشت افزار آوای قلم</span>
+<i class="fa-solid fa-phone"></i>
+
+0992 642 3630
+
+<span class="mx-3"></span>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@avayeghalam.ir
+
+</div>
+
+<div class="col-md-6 text-center text-md-end">
+
+<a href="#" class="social-icon">
+
+<i class="fab fa-instagram"></i>
 
 </a>
+
+<a href="https://eitaa.com/AvayeGhalamShop"
+target="_blank"
+class="social-icon">
+
+<img src="images/eitaa.png"
+height="18">
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===========================
+Navbar
+=========================== -->
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-lg">
+
+<div class="container">
+
+<a class="navbar-brand"
+href="index.html"
+
+<img src="images/logo.png"
+height="60">
+
+<span>
+
+آوای قلم
+
+</span>
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon">
+
+</span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbar">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+
+<a class="nav-link active"
+href="#">
+
+خانه
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="#products">
+
+محصولات
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="#gallery">
+
+گالری
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="#about">
+
+درباره ما
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="#contact">
+
+تماس با ما
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="d-flex align-items-center gap-3">
+
+<button
+class="btn btn-warning position-relative"
+data-bs-toggle="offcanvas"
+data-bs-target="#cartSidebar">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span
+id="cart-count"
+class="position-absolute
+top-0
+start-100
+translate-middle
+badge
+rounded-pill
+bg-danger">
+
+0
+
+</span>
+
+</button>
+
+<a
+href="https://eitaa.com/AvayeGhalamShop"
+target="_blank"
+class="btn btn-gold">
+
+ثبت سفارش
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
 </nav>
 
-<section class="container py-5">
+<!-- ===========================
+Page Header
+=========================== -->
 
-<h2 class="text-center text-warning mb-5">
+<section class="page-header py-5">
 
-همه محصولات
+    <div class="container text-center">
+
+        <h1 class="display-4 fw-bold text-warning">
+            محصولات آوای قلم
+        </h1>
+
+        <p class="lead text-light mt-3">
+            دفتر، نوشت افزار، کیف، لوازم هنری و هرآنچه برای مدرسه و محل کار نیاز دارید.
+        </p>
+
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-6">
+
+                <input
+                    type="text"
+                    id="modalSearchInput"
+                    class="form-control form-control-lg"
+                    placeholder="جستجوی محصول...">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+Banner
+=========================== -->
+
+<section class="promo-banner">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-7">
+
+<h2>
+
+تخفیف ویژه محصولات منتخب
 
 </h2>
 
+<p>
+
+همین امروز سفارش خود را ثبت کنید و از تخفیف‌های ویژه فروشگاه آوای قلم بهره‌مند شوید.
+
+</p>
+
+<a
+href="#products"
+class="btn btn-gold">
+
+مشاهده محصولات
+
+</a>
+
+</div>
+
+<div class="col-lg-5 text-center">
+
+<img
+src="images/banner.jpg"
+class="img-fluid rounded-4">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+Products
+=========================== -->
+
+<section
+id="products"
+class="products py-5">
+
+<div class="container">
+
+    <div class="row mb-5">
+
+    <div class="col-lg-8">
+
+        <div class="btn-group flex-wrap" role="group">
+
+    <button class="btn btn-warning active filter-btn"
+            data-filter="all">
+        همه محصولات
+    </button>
+
+    <button class="btn btn-outline-warning filter-btn"
+            data-filter="دفتر">
+        دفتر
+    </button>
+
+    <button class="btn btn-outline-warning filter-btn"
+            data-filter="خودکار">
+        خودکار
+    </button>
+
+    <button class="btn btn-outline-warning filter-btn"
+            data-filter="مداد">
+        مداد
+    </button>
+
+    <button class="btn btn-outline-warning filter-btn"
+            data-filter="جامدادی">
+        جامدادی
+    </button>
+
+</div>
+
+    </div>
+
+    <div class="col-lg-4 mt-3 mt-lg-0">
+
+        <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="جستجوی محصول...">
+
+    </div>
+
+</div>
+
+<div class="section-title">
+
+<h2>
+
+محصولات ویژه
+
+</h2>
+
+<p>
+
+پرفروش‌ترین محصولات فروشگاه
+
+</p>
+
+</div>
+
+<div class="row g-4">
+      <!-- Product 1 -->
+
+<div class="col-lg-3 col-md-6"
+     data-category="خودکار">
+
+<div class="product-card">
+
+<span class="discount-badge">
+
+15٪ تخفیف
+
+</span>
+
+<div class="product-image">
+
+    <div class="product-status">
+
+    <span class="badge bg-success">
+        موجود
+    </span>
+
+    <span class="badge bg-danger">
+        پرفروش
+    </span>
+
+</div>
+
+<img
+src="images/product1.jpg"
+class="img-fluid"
+alt="خودکار ">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+
+خودکار
+
+</div>
+
+<h4>
+
+خودکار دکتر پنتر
+
+</h4>
+
+<div class="product-rating">
+
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+
+</div>
+
+<div class="price-box">
+
+<span class="old-price">
+
+120,000 تومان
+
+</span>
+
+<span class="new-price">
+
+95,000 تومان
+
+</span>
+
+</div>
+
+<button
+class="btn btn-gold w-100 add-to-cart"
+
+data-id="1"
+
+data-name="خودکار دکتر پنتر"
+
+data-price="95000">
+
+<div class="small text-muted mt-2">
+
+کد کالا :
+AV-001
+
+</div>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="col-lg-3 col-md-6"
+     data-category="خودکار">
+
+<div class="product-card">
+
+<span class="discount-badge">
+
+10٪ تخفیف
+
+</span>
+
+<div class="product-image">
+
+    <div class="product-status">
+
+    <span class="badge bg-success">
+        موجود
+    </span>
+
+    <span class="badge bg-danger">
+        پرفروش
+    </span>
+
+</div>
+
+<img src="images/product2.jpg" class="img-fluid" alt="خودکار">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+
+نوشت افزار
+
+</div>
+
+<h4>
+
+خودکار پنتر
+
+</h4>
+
+<div class="product-rating">
+
+★★★★★
+
+</div>
+
+<div class="price-box">
+
+<span class="old-price">
+
+35,000 تومان
+
+</span>
+
+<span class="new-price">
+
+28,000 تومان
+
+</span>
+
+</div>
+
+<button
+class="btn btn-gold w-100 add-to-cart"
+
+data-id="2"
+
+data-name="خودکار پنتر"
+
+data-price="28000">
+
+<div class="small text-muted mt-2">
+
+کد کالا :
+AV-001
+
+</div>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="col-lg-3 col-md-6"
+     data-category="مداد">
+
+<div class="product-card">
+
+<div class="product-image">
+
+    <div class="product-status">
+
+    <span class="badge bg-success">
+        موجود
+    </span>
+
+    <span class="badge bg-danger">
+        پرفروش
+    </span>
+
+</div>
+
+<img
+src="images/product3.jpg"
+class="img-fluid"
+alt="مداد">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+
+نوشت افزار
+
+</div>
+
+<h4>
+
+مداد مشکی HB
+
+</h4>
+
+<div class="product-rating">
+
+★★★★★
+
+</div>
+
+<div class="price-box">
+
+<span class="new-price">
+
+18,000 تومان
+
+</span>
+
+</div>
+
+<button
+class="btn btn-gold w-100 add-to-cart"
+
+data-id="3"
+
+data-name="مداد مشکی"
+
+data-price="18000">
+
+<div class="small text-muted mt-2">
+
+کد کالا :
+AV-001
+
+</div>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 4 -->
+
+<div class="col-lg-3 col-md-6"
+     data-category="مداد">
+
+<div class="product-card">
+
+<div class="product-image">
+
+    <div class="product-status">
+
+    <span class="badge bg-success">
+        موجود
+    </span>
+
+    <span class="badge bg-danger">
+        پرفروش
+    </span>
+
+</div>
+
+<img
+src="images/product4.jpg"
+class="img-fluid"
+alt="جامدادی">
+
+</div>
+
+<div class="product-info">
+
+<div class="product-category">
+
+لوازم مدرسه
+
+</div>
+
+<h4>
+
+جامدادی پارچه‌ای
+
+</h4>
+
+<div class="product-rating">
+
+★★★★★
+
+</div>
+
+<div class="price-box">
+
+<span class="new-price">
+
+150,000 تومان
+
+</span>
+
+</div>
+
+<button
+class="btn btn-gold w-100 add-to-cart"
+
+data-id="4"
+
+data-name="جامدادی پارچه‌ای"
+
+data-price="150000">
+
+<div class="small text-muted mt-2">
+
+کد کالا :
+AV-001
+
+</div>
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="text-center mt-5">
+
+<a
+href="products.html"
+
+class="btn btn-outline-warning btn-lg">
+
+مشاهده همه محصولات
+
+<i class="fa-solid fa-arrow-left me-2"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===================================
+ Best Sellers
+=================================== -->
+
+<section class="best-sellers py-5">
+
+<div class="container">
+
+<div class="section-title text-center mb-5">
+
+<span class="section-subtitle">
+
+محبوب‌ترین محصولات
+
+</span>
+
+<h2>
+
+پرفروش‌ترین‌های آوای قلم
+
+</h2>
+
+<p>
+
+محصولاتی که بیشترین رضایت مشتریان را داشته‌اند.
+
+</p>
+
+</div>
+
 <div class="row g-4">
 
-<!-- محصول شماره ۱ -->
+<div class="col-lg-4">
+
+<div class="best-card">
+
+<div class="best-icon">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+<h3>
+
+کیفیت تضمین شده
+
+</h3>
+
+<p>
+
+تمام محصولات قبل از ارسال بررسی و کنترل کیفیت می‌شوند.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="best-card">
+
+<div class="best-icon">
+
+<i class="fa-solid fa-fire"></i>
+
+</div>
+
+<h3>
+
+پرفروش‌ترین محصولات
+
+</h3>
+
+<p>
+
+جدیدترین و محبوب‌ترین لوازم التحریر را از ما تهیه کنید.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="best-card">
+
+<div class="best-icon">
+
+<i class="fa-solid fa-award"></i>
+
+</div>
+
+<h3>
+
+رضایت مشتریان
+
+</h3>
+
+<p>
+
+هدف ما ارائه بهترین تجربه خرید برای شماست.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+ Statistics
+=================================== -->
+
+<section class="statistics">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-lg-3 col-6">
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="2500">
+
+0
+
+</h2>
+
+<p>
+
+مشتری راضی
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-6">
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="350">
+
+0
+
+</h2>
+
+<p>
+
+محصول متنوع
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-6">
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="98">
+
+0
+
+</h2>
+
+<p>
+
+درصد رضایت
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-6">
+
+<div class="counter-box">
+
+<h2 class="counter" data-target="5">
+
+0
+
+</h2>
+
+<p>
+
+سال سابقه
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+ Gallery
+=================================== -->
+
+<section id="gallery" class="gallery py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+گالری تصاویر
+
+</h2>
+
+<p>
+
+گوشه‌ای از محصولات فروشگاه آوای قلم
+
+</p>
+
+</div>
+
+<div class="row g-4">
 
 <div class="col-lg-3 col-md-6">
 
-<div class="card product-card">
+<img
+src="images/gallery1.jpg"
+class="img-fluid gallery-image rounded-4">
 
-<img src="../images/product1.jpg" class="card-img-top">
+</div>
 
-<div class="card-body text-center">
+<div class="col-lg-3 col-md-6">
 
-<h5>دفتر سیمی 100 برگ</h5>
+<img
+src="images/gallery2.jpg"
+class="img-fluid gallery-image rounded-4">
 
-<p class="price">95,000 تومان</p>
+</div>
 
-<a href="https://eitaa.com/AvayeGhalamShop"
+<div class="col-lg-3 col-md-6">
 
-class="btn btn-warning w-100"
+<img
+src="images/gallery3.jpg"
+class="img-fluid gallery-image rounded-4">
 
-target="_blank">
+</div>
 
-سفارش در ایتا
+<div class="col-lg-3 col-md-6">
+
+<img
+src="images/gallery4.jpg"
+class="img-fluid gallery-image rounded-4">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+ Why Us
+=================================== -->
+
+<section class="why-us py-5">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img
+src="images/banner.jpg"
+class="img-fluid rounded-4 shadow">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2>
+
+چرا آوای قلم؟
+
+</h2>
+
+<p>
+
+آوای قلم تلاش می‌کند بهترین لوازم التحریر را با مناسب‌ترین قیمت و سریع‌ترین ارسال در اختیار شما قرار دهد.
+
+</p>
+
+<ul class="why-list">
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+تنوع بالای محصولات
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+ارسال سریع
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+قیمت مناسب
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+پشتیبانی واقعی
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-check"></i>
+
+ضمانت کیفیت
+
+</li>
+
+</ul>
+
+<a
+href="https://eitaa.com/AvayeGhalamShop"
+target="_blank"
+class="btn btn-gold mt-4">
+
+ثبت سفارش
 
 </a>
 
@@ -72,12 +1131,1703 @@ target="_blank">
 
 </div>
 
-<!-- این کارت را بعداً برای محصولات دیگر کپی می‌کنیم -->
+</section>
+<!-- ===================================
+Testimonials
+=================================== -->
+
+<section class="testimonials py-5">
+
+    <div class="container">
+
+        <div class="section-title text-center mb-5">
+
+            <span class="section-subtitle">
+                نظرات مشتریان
+            </span>
+
+            <h2>
+                مشتریان درباره ما چه می‌گویند؟
+            </h2>
+
+            <p>
+                رضایت شما، بزرگ‌ترین سرمایه آوای قلم است.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        کیفیت محصولات فوق‌العاده بود و سفارشم خیلی سریع به دستم رسید.
+
+                    </p>
+
+                    <h5>
+
+                        زهرا محمدی
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        قیمت‌ها مناسب بود و بسته‌بندی هم بسیار عالی انجام شده بود.
+
+                    </p>
+
+                    <h5>
+
+                        علی رضایی
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="testimonial-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        حتماً دوباره از آوای قلم خرید خواهم کرد.
+
+                    </p>
+
+                    <h5>
+
+                        مریم احمدی
+
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+FAQ
+=================================== -->
+
+<section class="faq py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+سوالات متداول
+
+</h2>
+
+<p>
+
+پاسخ سوالاتی که بیشتر از ما پرسیده می‌شود.
+
+</p>
+
+</div>
+
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+class="accordion-button"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq1">
+
+هزینه ارسال چگونه محاسبه می‌شود؟
+
+</button>
+
+</h2>
+
+<div
+id="faq1"
+
+class="accordion-collapse collapse show"
+
+data-bs-parent="#faqAccordion">
+
+<div class="accordion-body">
+
+هزینه ارسال براساس مقصد و مبلغ سفارش محاسبه می‌شود.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+
+class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq2">
+
+چقدر طول می‌کشد سفارش به دستم برسد؟
+
+</button>
+
+</h2>
+
+<div
+
+id="faq2"
+
+class="accordion-collapse collapse"
+
+data-bs-parent="#faqAccordion">
+
+<div class="accordion-body">
+
+معمولاً بین ۱ تا ۳ روز کاری.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button
+
+class="accordion-button collapsed"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#faq3">
+
+آیا امکان تعویض کالا وجود دارد؟
+
+</button>
+
+</h2>
+
+<div
+
+id="faq3"
+
+class="accordion-collapse collapse"
+
+data-bs-parent="#faqAccordion">
+
+<div class="accordion-body">
+
+بله، در صورت وجود مشکل در کالا امکان تعویض فراهم است.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-</body>
+<!-- ===================================
+Newsletter
+=================================== -->
 
+<section class="newsletter py-5">
+
+<div class="container">
+
+<div class="newsletter-box">
+
+<h2>
+
+عضویت در خبرنامه
+
+</h2>
+
+<p>
+
+از جدیدترین محصولات و تخفیف‌های ویژه باخبر شوید.
+
+</p>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-6">
+
+<div class="input-group">
+
+<input
+type="email"
+
+class="form-control"
+
+placeholder="ایمیل خود را وارد کنید">
+
+<button
+class="btn btn-warning">
+
+عضویت
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+Contact
+=================================== -->
+
+<section id="contact" class="contact py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+تماس با ما
+
+</h2>
+
+<p>
+
+در صورت داشتن هرگونه سوال با ما در ارتباط باشید.
+
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<form>
+
+<div class="mb-3">
+
+<input
+
+type="text"
+
+class="form-control"
+
+placeholder="نام شما">
+
+</div>
+
+<div class="mb-3">
+
+<input
+
+type="email"
+
+class="form-control"
+
+placeholder="ایمیل">
+
+</div>
+
+<div class="mb-3">
+
+<textarea
+
+class="form-control"
+
+rows="5"
+
+placeholder="پیام شما">
+
+</textarea>
+
+</div>
+
+<button
+
+class="btn btn-gold">
+
+ارسال پیام
+
+</button>
+
+</form>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="contact-info">
+
+<h4>
+
+اطلاعات تماس
+
+</h4>
+
+<p>
+
+📍 آدرس فروشگاه
+
+</p>
+
+<p>
+
+📞 0992 642 3630
+
+</p>
+
+<p>
+
+📧 info@avayeghalam.ir
+
+</p>
+
+<p>
+
+🕒 همه روزه 9 الی 21
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===================================
+Map
+=================================== -->
+
+<section class="map-section">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span class="section-subtitle">
+
+                موقعیت فروشگاه
+
+            </span>
+
+            <h2>
+
+                ما را روی نقشه پیدا کنید
+
+            </h2>
+
+        </div>
+
+       <div class="text-center mt-4">
+
+    <a href="https://maps.app.goo.gl/8j5L9Utsb4REXiuJ9"
+       target="_blank"
+       class="btn btn-gold">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        مسیریابی با Google Maps
+
+    </a>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+Footer
+=================================== -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row gy-5">
+
+<div class="col-lg-4">
+
+<img
+src="images/logo.png"
+height="80"
+class="mb-3">
+
+<h3>
+
+آوای قلم
+
+</h3>
+
+<p>
+
+آوای قلم فروشگاه تخصصی لوازم التحریر است که با هدف ارائه محصولات باکیفیت، قیمت مناسب و ارسال سریع فعالیت می‌کند.
+
+</p>
+
+<div class="social-links">
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a
+href="https://eitaa.com/AvayeGhalamShop"
+target="_blank">
+
+<img
+src="images/eitaa.png"
+height="22">
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-2">
+
+<h4>
+
+دسترسی سریع
+
+</h4>
+
+<ul>
+
+<li>
+
+<a href="#">
+
+خانه
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#products">
+
+محصولات
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#gallery">
+
+گالری
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact">
+
+تماس با ما
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h4>
+
+دسته بندی ها
+
+</h4>
+
+<ul>
+
+<li>دفتر و کاغذ</li>
+
+<li>نوشت افزار</li>
+
+<li>جامدادی</li>
+
+<li>لوازم هنری</li>
+
+<li>لوازم مدرسه</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h4>
+
+ارتباط با ما
+
+</h4>
+
+<p>
+
+📍 اصفهان
+
+</p>
+
+<p>
+
+📞 0992 642 3630
+
+</p>
+
+<p>
+
+📧 mhsh137701@gmail.com
+
+</p>
+
+<p>
+
+🕒 همه روزه ۹ تا ۲۱
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="copyright text-center">
+
+<p>
+
+© 2026 تمامی حقوق این سایت متعلق به
+
+<strong>
+
+آوای قلم
+
+</strong>
+
+می‌باشد.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- ===================================
+Shopping Cart Sidebar
+=================================== -->
+
+<div
+class="offcanvas offcanvas-end"
+tabindex="-1"
+id="cartSidebar">
+
+<div class="offcanvas-header">
+
+<h5 class="offcanvas-title">
+
+🛒 سبد خرید
+
+</h5>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="offcanvas">
+
+</button>
+
+</div>
+
+<div class="offcanvas-body">
+
+<div id="cart-items">
+
+<p class="text-center text-muted">
+
+سبد خرید شما خالی است.
+
+</p>
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between">
+
+<strong>
+
+جمع کل
+
+</strong>
+
+<strong id="cart-total">
+
+۰ تومان
+
+</strong>
+
+</div>
+
+<button
+class="btn btn-warning w-100 mt-4">
+
+ادامه ثبت سفارش
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ===================================
+Back To Top
+=================================== -->
+
+<button
+id="backToTop"
+class="back-to-top">
+
+<i class="fa-solid fa-arrow-up">
+
+</i>
+
+</button>
+
+<!-- ===================================
+Loading Screen
+=================================== -->
+
+<!--
+<div id="loader">
+    ...
+</div>
+-->
+
+<div class="spinner-border text-warning">
+
+</div>
+
+</div>
+<!-- ===================================
+Search Modal
+=================================== -->
+
+<div
+class="modal fade"
+id="searchModal"
+tabindex="-1">
+
+<div class="modal-dialog modal-lg modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4>
+
+جستجوی محصولات
+
+</h4>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<input
+type="text"
+id="searchInput"
+class="form-control form-control-lg"
+placeholder="نام محصول را وارد کنید...">
+
+<div
+id="searchResults"
+class="mt-4">
+
+<p class="text-muted text-center">
+
+برای جستجو تایپ کنید...
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================================
+Quick View Product
+=================================== -->
+
+<div
+class="modal fade"
+id="productModal"
+tabindex="-1">
+
+<div class="modal-dialog modal-lg modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-body p-0">
+
+<div class="row g-0">
+
+<div class="col-lg-6">
+
+<img
+id="modalImage"
+src="images/product1.jpg"
+class="img-fluid w-100">
+
+</div>
+
+<div class="col-lg-6 p-4">
+
+<h3 id="modalTitle">
+
+نام محصول
+
+</h3>
+
+<div class="stars my-3">
+
+★★★★★
+
+</div>
+
+<h2
+id="modalPrice"
+class="text-warning">
+
+95,000 تومان
+
+</h2>
+
+<p id="modalDescription">
+
+توضیحات کامل محصول در این قسمت نمایش داده می‌شود.
+
+</p>
+
+<button
+class="btn btn-gold w-100 add-to-cart">
+
+🛒 افزودن به سبد خرید
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================================
+Toast Notification
+=================================== -->
+
+<div
+class="toast-container position-fixed bottom-0 end-0 p-4">
+
+<div
+id="cartToast"
+class="toast">
+
+<div class="toast-header">
+
+<strong class="me-auto">
+
+آوای قلم
+
+</strong>
+
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="toast">
+</button>
+
+</div>
+
+<div class="toast-body">
+
+محصول با موفقیت به سبد خرید اضافه شد.
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================================
+Order Modal
+=================================== -->
+
+<div
+class="modal fade"
+id="orderModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4>
+
+ثبت سفارش
+
+</h4>
+
+<button
+class="btn-close"
+data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<form>
+
+<input
+class="form-control mb-3"
+placeholder="نام و نام خانوادگی">
+
+<input
+class="form-control mb-3"
+placeholder="شماره تماس">
+
+<textarea
+class="form-control mb-3"
+rows="4"
+placeholder="آدرس کامل">
+
+</textarea>
+
+<button
+class="btn btn-warning w-100">
+
+ثبت سفارش
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ===================================
+Floating Buttons
+=================================== -->
+
+<div class="floating-buttons">
+
+<a
+href="https://eitaa.com/AvayeGhalamShop"
+target="_blank"
+class="floating-btn">
+
+<img
+src="images/eitaa.png"
+height="28">
+
+</a>
+
+<button
+class="floating-btn"
+data-bs-toggle="modal"
+data-bs-target="#searchModal">
+
+<i class="fa-solid fa-magnifying-glass">
+
+</i>
+
+</button>
+
+<button
+class="floating-btn"
+data-bs-toggle="offcanvas"
+data-bs-target="#cartSidebar">
+
+<i class="fa-solid fa-cart-shopping">
+
+</i>
+
+</button>
+
+</div>
+<!-- ===================================
+Flash Sale
+=================================== -->
+
+<section class="flash-sale py-5">
+
+    <div class="container">
+
+        <div class="flash-box">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+
+                    <span class="sale-badge">
+
+                        🔥 پیشنهاد ویژه امروز
+
+                    </span>
+
+                    <h2>
+
+                        تا ۳۰٪ تخفیف روی منتخب محصولات
+
+                    </h2>
+
+                    <p>
+
+                        فرصت محدود! تا پایان زمان تخفیف سفارش خود را ثبت کنید.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="countdown justify-content-center">
+
+                        <div class="time-box">
+
+                            <span id="days">00</span>
+
+                            <small>روز</small>
+
+                        </div>
+
+                        <div class="time-box">
+
+                            <span id="hours">00</span>
+
+                            <small>ساعت</small>
+
+                        </div>
+
+                        <div class="time-box">
+
+                            <span id="minutes">00</span>
+
+                            <small>دقیقه</small>
+
+                        </div>
+
+                        <div class="time-box">
+
+                            <span id="seconds">00</span>
+
+                            <small>ثانیه</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+Brands
+=================================== -->
+
+<section class="brands py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+برندهای همکار
+
+</h2>
+
+<p>
+
+برترین برندهای نوشت افزار و لوازم التحریر
+
+</p>
+
+</div>
+
+<div class="row text-center g-4">
+
+<div class="col">
+
+<div class="brand-box">
+
+Faber-Castell
+
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="brand-box">
+
+Panter
+
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="brand-box">
+
+Bic
+
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="brand-box">
+
+Maped
+
+</div>
+
+</div>
+
+<div class="col">
+
+<div class="brand-box">
+
+Staedtler
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+Wishlist
+=================================== -->
+
+<section class="wishlist-preview py-5">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+محصولات مورد علاقه
+
+</h2>
+
+<p>
+
+محصولاتی که ذخیره کرده‌اید.
+
+</p>
+
+</div>
+
+<div id="wishlist-items" class="row g-4">
+
+<div class="col-12 text-center text-muted">
+
+هنوز محصولی به علاقه‌مندی‌ها اضافه نشده است.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+Services
+=================================== -->
+
+<section class="services py-5">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="service-card">
+
+<i class="fa-solid fa-box-open"></i>
+
+<h4>
+
+بسته‌بندی حرفه‌ای
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="service-card">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+<h4>
+
+ضمانت بازگشت
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="service-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h4>
+
+قیمت مناسب
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="service-card">
+
+<i class="fa-solid fa-comments"></i>
+
+<h4>
+
+مشاوره رایگان
+
+</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+Instagram & Eitaa
+=================================== -->
+
+<section class="social-section py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+همراه ما باشید
+
+</h2>
+
+<p>
+
+آخرین محصولات و تخفیف‌ها را در شبکه‌های اجتماعی دنبال کنید.
+
+</p>
+
+</div>
+
+<div class="d-flex justify-content-center gap-4 flex-wrap">
+
+<a href="#"
+class="btn btn-outline-light btn-lg">
+
+<i class="fab fa-instagram"></i>
+
+اینستاگرام
+
+</a>
+
+<a
+href="https://eitaa.com/AvayeGhalamShop"
+target="_blank"
+class="btn btn-warning btn-lg">
+
+<img
+src="images/eitaa.png"
+height="22"
+class="ms-2">
+
+کانال ایتا
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===================================
+Checkout Summary
+=================================== -->
+
+<section class="checkout-preview py-5">
+
+    <div class="container">
+
+        <div class="section-title text-center">
+
+            <span class="section-subtitle">
+
+                خلاصه سفارش
+
+            </span>
+
+            <h2>
+
+                آماده ثبت سفارش؟
+
+            </h2>
+
+            <p>
+
+                سفارش خود را بررسی کرده و در چند مرحله ساده نهایی کنید.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-8">
+
+                <div class="checkout-box">
+
+                    <h4 class="mb-4">
+
+                        کالاهای انتخاب شده
+
+                    </h4>
+
+                    <div id="checkout-items">
+
+                        <div class="empty-cart">
+
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <p>
+
+                                هنوز کالایی به سبد خرید اضافه نشده است.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="summary-box">
+
+                    <h4>
+
+                        خلاصه پرداخت
+
+                    </h4>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between">
+
+                        <span>
+
+                            مبلغ کالاها
+
+                        </span>
+
+                        <span id="summary-price">
+
+                            ۰ تومان
+
+                        </span>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-3">
+
+                        <span>
+
+                            هزینه ارسال
+
+                        </span>
+
+                        <span id="shipping-price">
+
+                            رایگان
+
+                        </span>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between">
+
+                        <strong>
+
+                            مبلغ نهایی
+
+                        </strong>
+
+                        <strong id="final-price">
+
+                            ۰ تومان
+
+                        </strong>
+
+                    </div>
+
+                    <button
+                    class="btn btn-gold w-100 mt-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal">
+
+                        ادامه ثبت سفارش
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================
+Shipping Methods
+=================================== -->
+
+<section class="shipping-method py-5">
+
+<div class="container">
+
+<div class="section-title text-center">
+
+<h2>
+
+روش ارسال
+
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="shipping-card">
+
+<input
+type="radio"
+name="shipping"
+checked>
+
+<h4>
+
+ارسال عادی
+
+</h4>
+
+<p>
+
+۲ تا ۳ روز کاری
+
+</p>
+
+<strong>
+
+رایگان
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="shipping-card">
+
+<input
+type="radio"
+name="shipping">
+
+<h4>
+
+ارسال سریع
+
+</h4>
+
+<p>
+
+کمتر از ۲۴ ساعت
+
+</p>
+
+<strong>
+
+۷۵٬۰۰۰ تومان
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="shipping-card">
+
+<input
+type="radio"
+name="shipping">
+
+<h4>
+
+تحویل حضوری
+
+</h4>
+
+<p>
+
+دریافت از فروشگاه
+
+</p>
+
+<strong>
+
+رایگان
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================
+Trust Badges
+=================================== -->
+
+<section class="trust-badges py-5">
+
+<div class="container">
+
+<div class="row g-4 text-center">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="trust-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<h5>
+
+پرداخت امن
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="trust-box">
+
+<i class="fa-solid fa-truck"></i>
+
+<h5>
+
+ارسال سریع
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="trust-box">
+
+<i class="fa-solid fa-medal"></i>
+
+<h5>
+
+ضمانت کیفیت
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="trust-box">
+
+<i class="fa-solid fa-headset"></i>
+
+<h5>
+
+پشتیبانی ۲۴ ساعته
+
+</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>ُ
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Main JS -->
+<script src="js/app.js"></script>
+
+</body>
 </html>
